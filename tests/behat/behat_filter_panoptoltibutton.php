@@ -22,7 +22,7 @@ use Behat\Gherkin\Node\TableNode;
 use Behat\Mink\Exception\ExpectationException;
 
 /**
- * Behat stepsfor filter_panoptoltibutton.
+ * Behat steps for filter_panoptoltibutton.
  *
  * @package    filter_panoptoltibutton
  * @category   test
