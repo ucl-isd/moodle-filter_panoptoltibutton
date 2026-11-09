@@ -20,7 +20,7 @@ namespace filter_panoptoltibutton\privacy;
  * Privacy Subsystem for filter_panoptoltibutton implementing null_provider.
  *
  * @package    filter_panoptoltibutton
- * @copyright  2026 Panopto
+ * @copyright  2026 onwards University College London {@link https://www.ucl.ac.uk/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements \core_privacy\local\metadata\null_provider {

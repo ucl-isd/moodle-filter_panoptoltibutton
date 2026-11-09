@@ -18,17 +18,18 @@
  * Version details for the Panopto Tiny Editor embeds filter.
  *
  * @package    filter_panoptoltibutton
- * @copyright  2026 Panopto
+ * @copyright  2026 onwards University College London {@link https://www.ucl.ac.uk/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'filter_panoptoltibutton';
-$plugin->version = 2026092400;
+$plugin->version = 2026110600;
 $plugin->requires = 2024100700; // Moodle 4.5.
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.3';
+$plugin->release = '1.0';
 $plugin->dependencies = [
-    'tiny_panoptoltibutton' => 2025112600,
+    'tiny_panoptoltibutton' => 2026073000,
+    'block_panopto' => 2026073000,
 ];

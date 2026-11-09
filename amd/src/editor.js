@@ -19,7 +19,7 @@
  * The video title is saved as the link text.
  *
  * @module     filter_panoptoltibutton/editor
- * @copyright  2026 Panopto
+ * @copyright  2026 onwards University College London {@link https://www.ucl.ac.uk/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

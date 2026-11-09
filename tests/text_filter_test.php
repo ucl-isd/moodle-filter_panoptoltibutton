@@ -23,7 +23,7 @@ use core\url;
  * Tests for the Panopto Tiny Editor embeds filter.
  *
  * @package    filter_panoptoltibutton
- * @copyright  2026 Panopto
+ * @copyright  2026 onwards University College London {@link https://www.ucl.ac.uk/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers     \filter_panoptoltibutton\text_filter
  */
@@ -47,7 +47,7 @@ final class text_filter_test extends \advanced_testcase {
     }
 
     /**
-     * Get a filter for which every course uses Panopto LTI tool 3.
+     * Build a filter (hard-coded to always use Panopto LTI tool ID 3).
      *
      * @param \core\context|null $context Filter context, the system context by default.
      * @return text_filter
