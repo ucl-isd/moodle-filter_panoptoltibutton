@@ -60,16 +60,16 @@ class behat_filter_panoptoltibutton extends behat_base {
         (() => {
             // The Panopto dialogue (an iframe containing panoptowrapper.html).
             const dialogue = document.querySelector('iframe[src*="panoptowrapper.html"]')?.contentWindow;
-            // Wait until the inner frame has left Moodle for the fake Panopto server: by then it has
-            // loaded, so editor.js is capturing titles (this always happens for a real user).
-            if (dialogue?.document.getElementById('pageframe')?.contentDocument !== null) {
-                return false;
-            }
 
             // Panopto sends its results to a function in document.CALLBACKS.
-            const callbacks = dialogue.document.CALLBACKS ?? {};
+            const callbacks = dialogue?.document.CALLBACKS ?? {};
             const name = Object.keys(callbacks).find((key) => key.startsWith('f'));
             if (!name) {
+                return false;
+            }
+            // Wait until editor.js has replaced the dialogue's own callback, which is the one that calls
+            // mceInsertContent, with its title-recording wrapper (this always happens for a real user).
+            if (callbacks[name].toString().includes('mceInsertContent')) {
                 return false;
             }
             // Call using fake videos.
