@@ -30,6 +30,6 @@ $plugin->requires = 2024100700; // Moodle 4.5.
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = '1.0';
 $plugin->dependencies = [
-    'tiny_panoptoltibutton' => 2026073000,
+    'tiny_panoptoltibutton' => 2025112600,
     'block_panopto' => 2026073000,
 ];
