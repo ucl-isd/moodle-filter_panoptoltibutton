@@ -81,6 +81,7 @@ class behat_filter_panoptoltibutton extends behat_base {
         // Keep trying until successful.
         $this->spin(
             fn() => $this->evaluate_script($script),
+            timeout: self::get_extended_timeout(),
             exception: new ExpectationException('The Panopto dialogue did not finish loading', $this->getSession()),
         );
     }

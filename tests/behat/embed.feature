@@ -21,8 +21,8 @@ Feature: Use the Panopto Tiny editor button to embed videos in the text editor.
     And the following config values are set as admin:
       | automatic_operation_target_server | panopto.example.com | block_panopto |
     And the following "mod_lti > tool types" exist:
-      | name    | baseurl                         | tooldomain          | state | lti_customparameters        |
-      | Panopto | https://panopto.example.com/lti | panopto.example.com |     1 | panopto_course_embed_tool=1 |
+      | name    | baseurl                                                              | tooldomain          | state | lti_customparameters        |
+      | Panopto | /mod/lti/tests/fixtures/tool_provider.php?server=panopto.example.com | panopto.example.com |     1 | panopto_course_embed_tool=1 |
 
   Scenario: Panopto videos keep their titles when saved and edited
     Given I am on the "Assignment 1" "Activity" page logged in as "student"
