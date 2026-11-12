@@ -16,7 +16,8 @@ On the assignment Submissions page, videos are shown as links unless
 ## Requirements
 
 - Moodle 4.5
-- `tiny_panoptoltibutton` (and its dependency `block_panopto`)
+- `tiny_panoptoltibutton`
+- `block_panopto`
 
 ## Installation
 
@@ -26,5 +27,16 @@ On the assignment Submissions page, videos are shown as links unless
    **Panopto Tiny Editor embeds** to **On**.
 
 Videos that Moodle removed before this filter was enabled cannot be recovered
-and must be inserted again. Videos saved before version 1.3 of this filter are
-shown with the title "Panopto video"; insert them again to show their title.
+and must be inserted again.
+
+## After upgrading tiny_panoptoltibutton or block_panopto
+
+This filter relies on how `tiny_panoptoltibutton` inserts videos, so check it
+still works after either plugin is upgraded.
+
+1. Run the Behat test:
+   `vendor/bin/behat --config ~/development/moodle45/behatdata/behatrun/behat/behat.yml --profile=chrome --tags=@filter_panoptoltibutton --format=pretty`
+2. As a student, insert two real Panopto videos into an assignment online text
+   submission. Check that each video plays and has its own title, not
+   "Panopto video", after saving and again after editing.
+

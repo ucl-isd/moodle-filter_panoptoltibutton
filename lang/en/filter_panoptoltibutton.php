@@ -18,13 +18,13 @@
  * Strings for component 'filter_panoptoltibutton', language 'en'.
  *
  * @package    filter_panoptoltibutton
- * @copyright  2026 Panopto
+ * @copyright  2026 onwards University College London {@link https://www.ucl.ac.uk/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['defaulttitle'] = 'Panopto video';
 $string['embedsubmissions'] = 'Embed videos on the Submissions page';
 $string['embedsubmissions_desc'] = 'If enabled, Panopto videos in online text submissions are embedded on the assignment Submissions page. Otherwise, they are shown as links with the video title. Embedded videos are launched as they come into view, which can make the page slower when there are many submissions.';
-$string['filtername'] = 'Panopto Tiny Editor embeds';
-$string['pluginname'] = 'Panopto Tiny Editor embeds';
-$string['privacy:metadata'] = 'The Panopto Tiny Editor embeds filter does not store any personal data.';
+$string['filtername'] = 'Panopto Tiny editor embeds';
+$string['pluginname'] = 'Panopto Tiny editor embeds';
+$string['privacy:metadata'] = 'The Panopto Tiny editor embeds filter does not store any personal data.';

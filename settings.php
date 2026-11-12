@@ -18,7 +18,7 @@
  * Settings for the Panopto Tiny Editor embeds filter.
  *
  * @package    filter_panoptoltibutton
- * @copyright  2026 Panopto
+ * @copyright  2026 onwards University College London {@link https://www.ucl.ac.uk/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

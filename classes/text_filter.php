@@ -23,7 +23,7 @@ use core\url;
  * Turns Panopto embed markers back into LTI launch iframes after Moodle has cleaned the HTML.
  *
  * @package    filter_panoptoltibutton
- * @copyright  2026 Panopto
+ * @copyright  2026 onwards University College London {@link https://www.ucl.ac.uk/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class text_filter extends \core_filters\text_filter {
@@ -31,7 +31,7 @@ class text_filter extends \core_filters\text_filter {
     private const LAUNCH_PATH = '/lib/editor/tiny/plugins/panoptoltibutton/view.php';
 
     /** @var string Matches marker links written by amd/src/editor.js, capturing the href and the link text. */
-    private const MARKER_PATTERN = '~<a\b(?=[^>]*\sclass="[^"]*\bpanopto-embed\b)[^>]*\shref="([^"]+)"[^>]*>(.*?)</a>~is';
+    private const MARKER_PATTERN = '~<a\b(?=[^>]*\sclass="(?:[^"]*\s)?panopto-embed[\s"])[^>]*\shref="([^"]+)"[^>]*>(.*?)</a>~is';
 
     #[\Override]
     public function setup($page, $context) {
